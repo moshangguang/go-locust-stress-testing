@@ -165,7 +165,13 @@ CMD ["/usr/bin/supervisord"]
 
 
 
-supervisord.conf包含两个程序：locust和go-testing，command就是启动程序的命令，autostart=true代表，当supervisord启动时自动启动该进程，autorestart=true代表进程异常退出后自动重启，stdout_logfile是标准输出日志文件路径，stderr_logfile是标准错误输出日志的路径。
+supervisord.conf包含两个程序：locust和go-testing
+
+- command就是启动程序的命令。
+- autostart=true代表当supervisord启动时自动启动该进程。
+- autorestart=true代表进程异常退出后自动重启。
+- stdout_logfile是标准输出日志文件路径。
+- stderr_logfile是标准错误输出日志的路径。
 
 ```
 [supervisord]
